@@ -1,4 +1,5 @@
 import time
+from urllib.parse import urlparse
 
 from browser import driver
 from common import settings
@@ -10,10 +11,10 @@ print("Envato opened. Complete login through the SSH-forwarded noVNC page at htt
 try:
     while True:
         url = d.current_url
-        if "sign-in" not in url and "envato.com" in url:
+        path = urlparse(url).path.lower()
+        if "sign-in" not in path and "sign_in" not in path and "envato.com" in url:
             print(f"authenticated page visible: {url}")
         time.sleep(10)
 except KeyboardInterrupt:
     d.quit()
     print("browser profile saved")
-
