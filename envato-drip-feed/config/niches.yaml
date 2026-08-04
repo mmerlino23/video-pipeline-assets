@@ -2,7 +2,7 @@ version: 1
 rotation:
   asset_types: [stock-video, photos, web-templates, wordpress, video-templates, graphic-templates]
   max_downloads_per_run: 4
-  priority_niches: [roofing, moving, cleaning, solar, hvac, plumbing, personal-injury]
+  priority_niches: [roofing, house-cleaning, moving, hvac, plumbing, dumpster-rental, electrical, restoration, solar, personal-injury, health-insurance, pool-screen-repair, digital-marketing]
 niches:
   - slug: solar
     queries: [residential solar roof, solar panel installer, home battery storage, solar technician, solar inspection drone]
@@ -36,7 +36,7 @@ niches:
     queries: [water damage restoration, fire damage cleanup, mold remediation, flood cleanup crew]
     required_any: [restoration, water damage, fire damage, mold, cleanup]
     blocked: [cosmetic restoration, art restoration]
-  - slug: cleaning
+  - slug: house-cleaning
     queries: [professional house cleaning, vacation rental cleaning, commercial cleaning crew, deep cleaning kitchen]
     required_any: [cleaning, cleaner, housekeeping, janitorial]
     blocked: [teeth cleaning, data cleaning]
@@ -52,3 +52,11 @@ niches:
     queries: [digital marketing agency, website design team, SEO analytics dashboard, content production studio]
     required_any: [marketing, web design, seo, analytics, content]
     blocked: [fake dashboard metrics, cartoon]
+  - slug: health-insurance
+    queries: [health insurance agent consultation, insurance advisor meeting family, Medicare consultation office, health plan documents]
+    required_any: [insurance, advisor, consultation, health plan, medicare]
+    blocked: [hospital surgery, medical emergency, cartoon]
+  - slug: pool-screen-repair
+    queries: [pool screen enclosure repair, screened pool patio, lanai screen installer, pool cage construction]
+    required_any: [pool screen, enclosure, lanai, pool cage, screen repair]
+    blocked: [swimming competition, phone screen, computer screen, cartoon]
