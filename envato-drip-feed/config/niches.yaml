@@ -2,6 +2,7 @@ version: 1
 rotation:
   asset_types: [stock-video, photos, web-templates, wordpress, video-templates, graphic-templates]
   max_downloads_per_run: 4
+  priority_niches: [roofing, moving, cleaning, solar, hvac, plumbing, personal-injury]
 niches:
   - slug: solar
     queries: [residential solar roof, solar panel installer, home battery storage, solar technician, solar inspection drone]
@@ -51,4 +52,3 @@ niches:
     queries: [digital marketing agency, website design team, SEO analytics dashboard, content production studio]
     required_any: [marketing, web design, seo, analytics, content]
     blocked: [fake dashboard metrics, cartoon]
-
