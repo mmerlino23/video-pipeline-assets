@@ -1,0 +1,54 @@
+version: 1
+rotation:
+  asset_types: [stock-video, photos, web-templates, wordpress, video-templates, graphic-templates]
+  max_downloads_per_run: 4
+niches:
+  - slug: solar
+    queries: [residential solar roof, solar panel installer, home battery storage, solar technician, solar inspection drone]
+    required_any: [solar, photovoltaic, panel, battery, rooftop, renewable]
+    blocked: [car only, skyscraper, illustration, cartoon]
+  - slug: roofing
+    queries: [residential roofing contractor, roof inspection, shingle replacement, metal roofing, storm roof damage]
+    required_any: [roof, roofer, shingle, flashing, gutter]
+    blocked: [food, fashion, cartoon]
+  - slug: electrical
+    queries: [residential electrician, electrical panel upgrade, home wiring, EV charger installation, electrical inspection]
+    required_any: [electrician, electrical, wiring, breaker, voltage, charger]
+    blocked: [music, guitar, cartoon]
+  - slug: hvac
+    queries: [residential HVAC technician, air conditioner repair, furnace maintenance, heat pump installation, ductwork]
+    required_any: [hvac, air conditioner, furnace, heat pump, duct, technician]
+    blocked: [computer cooling, car air conditioning, cartoon]
+  - slug: dumpster-rental
+    queries: [roll off dumpster rental, construction dumpster, residential cleanout dumpster, dumpster delivery truck]
+    required_any: [dumpster, roll off, waste container, debris, cleanout]
+    blocked: [trash can icon, cartoon]
+  - slug: personal-injury
+    queries: [personal injury lawyer office, attorney client consultation, legal team meeting, accident claim documents, courthouse exterior]
+    required_any: [lawyer, attorney, legal, courthouse, consultation, claim]
+    blocked: [criminal arrest, jail, cartoon]
+  - slug: plumbing
+    queries: [residential plumber, water heater repair, drain cleaning, pipe repair, bathroom plumbing]
+    required_any: [plumber, plumbing, pipe, drain, water heater]
+    blocked: [industrial refinery, cartoon]
+  - slug: restoration
+    queries: [water damage restoration, fire damage cleanup, mold remediation, flood cleanup crew]
+    required_any: [restoration, water damage, fire damage, mold, cleanup]
+    blocked: [cosmetic restoration, art restoration]
+  - slug: cleaning
+    queries: [professional house cleaning, vacation rental cleaning, commercial cleaning crew, deep cleaning kitchen]
+    required_any: [cleaning, cleaner, housekeeping, janitorial]
+    blocked: [teeth cleaning, data cleaning]
+  - slug: moving
+    queries: [professional movers house, moving truck residential, furniture movers, packing service]
+    required_any: [mover, moving, relocation, packing, furniture]
+    blocked: [dance movement, stock market]
+  - slug: addiction-treatment
+    queries: [recovery counseling, addiction treatment center, therapy group support, behavioral health consultation]
+    required_any: [recovery, counseling, treatment, therapy, behavioral health]
+    blocked: [drug use closeup, needles, intoxication]
+  - slug: digital-marketing
+    queries: [digital marketing agency, website design team, SEO analytics dashboard, content production studio]
+    required_any: [marketing, web design, seo, analytics, content]
+    blocked: [fake dashboard metrics, cartoon]
+

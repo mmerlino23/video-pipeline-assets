@@ -1,0 +1,14 @@
+[Unit]
+Description=Envato licensed niche media drip feed
+After=docker.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=merlino
+WorkingDirectory=/opt/envato-drip-feed
+EnvironmentFile=/opt/envato-drip-feed/.env
+ExecStart=/usr/bin/flock -n /srv/envato-drip-feed/state/run.lock /opt/envato-drip-feed/.venv/bin/python scripts/run_batch.py
+TimeoutStartSec=3600
+Nice=10
+

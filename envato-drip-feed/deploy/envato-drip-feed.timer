@@ -1,0 +1,12 @@
+[Unit]
+Description=Run one Envato niche media batch every six hours
+
+[Timer]
+OnCalendar=*-*-* 01,07,13,19:17:00 America/New_York
+RandomizedDelaySec=20m
+Persistent=true
+Unit=envato-drip-feed.service
+
+[Install]
+WantedBy=timers.target
+

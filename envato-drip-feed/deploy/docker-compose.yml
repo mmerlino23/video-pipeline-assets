@@ -1,0 +1,18 @@
+services:
+  browser:
+    image: selenium/standalone-chromium:4.34.0-20250727
+    shm_size: 2gb
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:4444:4444"
+      - "127.0.0.1:7900:7900"
+    environment:
+      SE_NODE_MAX_SESSIONS: "1"
+      SE_NODE_OVERRIDE_MAX_SESSIONS: "true"
+      SE_SESSION_REQUEST_TIMEOUT: "600"
+      SE_SESSION_RETRY_INTERVAL: "5"
+      SE_VNC_NO_PASSWORD: "1"
+    volumes:
+      - /srv/envato-drip-feed/browser-profile:/home/seluser/profile
+      - /srv/envato-drip-feed/staging:/home/seluser/Downloads
+
